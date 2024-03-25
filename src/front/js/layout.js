@@ -4,7 +4,7 @@ import ScrollToTop from "./component/scrollToTop";
 import { BackendURL } from "./component/backendURL";
 
 import { Login } from "./pages/login";
-import  Register   from "./pages/register";
+import  Register  from "./pages/register";
 import  Private   from "./pages/private";
 import { Home } from "./pages/home";
 import { Demo } from "./pages/demo";
@@ -29,6 +29,7 @@ const Layout = () => {
         <div>
             <BrowserRouter basename={basename}>
                 <ScrollToTop>
+                <ToastContainer/> 
                     <Navbar />
                     <Routes>
                         <Route element={<Home />} path="/" />
